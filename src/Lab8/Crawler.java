@@ -49,6 +49,7 @@ public class Crawler {
     public static void showResult(LinkedList<URLDepthPair> resultLink) {
         for (URLDepthPair c : resultLink)
             System.out.println("Depth: " + c.getDepth() + "\tLink: " + c.toString());
+        System.out.println("\nFound links: " + resultLink.size());
     }
 
     /** Вспомогательная функция для проверки, является ли строка числом **/
